@@ -81,15 +81,9 @@ def transfer():
 
     shutil.copyfile(os.environ['USERPROFILE'] + "\Saved Games\Respawn\Apex\profile\profile.cfg", "Profiles/My_Profile.cfg")
 
-    '''
-    username = input("Enter username:")
-    username = "Djurik"
-    '''
-
     a_file = open("Profiles/" + variable.get(), "r")
     new_cfg = a_file.readlines()
     
-
     list_of_lines[15] = new_cfg[15]
     list_of_lines[16] = new_cfg[16]
     list_of_lines[17] = new_cfg[17]
@@ -118,7 +112,6 @@ def transfer():
     list_of_lines[54] = new_cfg[54]
     list_of_lines[55] = new_cfg[55]
     list_of_lines[56] = new_cfg[56]
-    list_of_lines[57] = new_cfg[57]
     list_of_lines[59] = new_cfg[59] #Look Deadzone
     list_of_lines[60] = new_cfg[60] #Movement Deadzone
     list_of_lines[61] = new_cfg[61] #Response Curve
@@ -129,14 +122,10 @@ def transfer():
     a_file.writelines(list_of_lines)
     a_file.close()
 
-    message = tk.Label(ws, text="Transfer Complete...", bg="#F2B90C", width="50")
+    message = tk.Label(ws, text=variable.get() + " - Transfer Complete...", bg="#F2B90C", width="50")
     message.pack()
     message.place(x=0,y=130)
 
-'''
-    state="disabled"
-
-'''
 
 # Transfer button
 transfer_button = tk.Button(
@@ -179,4 +168,3 @@ link1.place(x=10, y=160)
 
 # infinite loop 
 ws.mainloop()
-
