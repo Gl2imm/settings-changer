@@ -1,7 +1,7 @@
 # settings-changer
 This script is to edit lines in profile.cfg in Apex Legends (C:\Users\User\Saved Games\Respawn\Apex\profile). For now it modify only controller settings - sensitivity, ALC, Optics, it does not touch any other values or preferences.
 
-If you are testing different settings from other players and there are alot of changes to be done, especially in ALC - this script is for you.
+If you are testing different settings from other players and there are alot of changes to be done, especially in ALC - this script is for you. Also, it is impossible to have rounded up values to be set in-game, even you perfectly set it as 1 - in cfg it will be 1.03405 or something similar (Rounded up values works best with XIM). So you can round up your cfg values once and save it, don't have to do it each time.
 
 ![App interface](https://i.ibb.co/pwCQ18G/1.png)
 
