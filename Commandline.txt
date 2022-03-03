@@ -1,0 +1,3 @@
+cd C:\Users\User\Desktop\SettingsChanger
+
+pyinstaller --onefile changer.spec Changer.py
